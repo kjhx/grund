@@ -1,5 +1,5 @@
-/*
- * grund v0.2
+/*!
+ * grund v0.4
  * a project by @kjhx
  *
  * Licensed under MIT
@@ -28,9 +28,42 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bolder;
 }
 
-h1 { font-size: 2.2em }
-h2 { font-size: 1.8em }
-h3 { font-size: 1.6em }
-h4 { font-size: 1.4em }
-h5 { font-size: 1.2em }
-h6 { font-size: 1em }
+h1 { font-size: 2.2em; }
+h2 { font-size: 1.8em; }
+h3 { font-size: 1.6em; }
+h4 { font-size: 1.4em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1em; }
+
+a, a:visited {
+  color: $ternary;
+  text-decoration: none;
+  transition: color .15s ease-in;
+}
+
+a:hover { color: lighten($ternary, 7); }
+
+abbr[title] {
+  text-decoration: none;
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+mark {
+  background-color: adjust_hue(saturate(lighten($primary, 50), 91), 55);
+  border-radius: .1rem;
+  padding: .1rem;
+}
+
+code {
+  padding: .2rem .5rem;
+  margin: 0 .2rem;
+  font-family: monospace;
+  background: $background-secondary;
+  border-radius: 4px;
+}
+
+pre code {
+  display: block;
+  white-space: pre-wrap;
+}

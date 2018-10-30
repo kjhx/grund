@@ -1,5 +1,14 @@
-// Primary dark theme
+/*
+ * Primary text
+ * Secondary text
+ * Links
+ * Background
+ * Light background (code tags / forms)
+ *
+ */
 
 $primary: #000;
 $secondary: darken($primary, 20%);
+$ternary: #ef5350;
 $background: #fff;
+$background-secondary: darken($background, 5%);
