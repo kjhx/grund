@@ -1,0 +1,19 @@
+{
+  "name": "grund.css",
+  "version": "0.4.2",
+  "description": "a lightning quick, classless template.",
+  "main": "dist/grund.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kjhx/grund.git"
+  },
+  "author": "kjhx",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kjhx/grund/issues"
+  },
+  "homepage": "https://github.com/kjhx/grund#readme"
+}
