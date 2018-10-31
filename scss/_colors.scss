@@ -8,7 +8,7 @@
  */
 
 $primary: #000;
-$secondary: darken($primary, 20%);
+$secondary: lighten($primary, 50%);
 $ternary: #ef5350;
 $background: #fff;
 $background-secondary: darken($background, 5%);
