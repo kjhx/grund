@@ -1,8 +1,8 @@
 {
   "name": "grund.css",
-  "version": "0.4.2",
+  "version": "1.0.6",
   "description": "a lightning quick, classless template.",
-  "main": "dist/grund.css",
+  "main": "grund.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
