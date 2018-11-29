@@ -1,5 +1,5 @@
 NPM := npm
-SASS := sass --force --sourcemap=none --style compressed
+SASS := sass
 
 .PHONY: all build clean
 
@@ -10,11 +10,11 @@ clean:
 
 b: build
 build:
-	$(SASS) scss/grund.scss grund.css
+	$(SASS) --sourcemap=none --style compressed scss/grund.scss grund.css
 
 s: serve
 serve:
-	$(SASS) --watch scss/grund.scss grund.css
+	$(SASS) --watch scss/grund.scss:grund.css
 
-publish:
+publish: scss/grund.scss
 	$(NPM) publish
