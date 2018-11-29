@@ -1,5 +1,5 @@
 /*!
- * grund v1.1.4
+ * grund v1.1.8
  * a project by @kjhx
  *
  * Licensed under MIT
@@ -131,6 +131,7 @@ form {
 }
 
 textarea, input[type=text], input[type=search], input[type=email], input[type=url], input[type=color], input[type=date], input[type=file], input[type=month], input[type=number], input[type=tel], input[type=password] {
+  -webkit-appearance: textfield;
   min-height: 1.5rem;
   padding: .4rem .4rem;
   border: .1rem solid $secondary;
