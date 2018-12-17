@@ -1,19 +1,19 @@
 {
-  "name": "pressman.css",
-  "version": "0.0.4",
-  "description": "css boilerplate for barebones websites",
-  "main": "pressman.css",
+  "name": "grund.css",
+  "version": "1.2.0",
+  "description": "a lightning quick, classless template.",
+  "main": "grund.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kjhx/pressman.git"
+    "url": "git+https://github.com/kjhx/grund.git"
   },
   "author": "kjhx",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kjhx/pressman/issues"
+    "url": "https://github.com/kjhx/grund/issues"
   },
-  "homepage": "https://github.com/kjhx/pressman#readme"
+  "homepage": "https://github.com/kjhx/grund#readme"
 }

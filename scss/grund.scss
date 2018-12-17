@@ -1,28 +1,26 @@
 /*!
- * pressman v0.0.4
+ * grund v1.2.0
  * a project by @kjhx
  *
  * Licensed under MIT
  */
 
-@import "theme";
+@import "colors";
 
 html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
 
-/* Core
- –––––––––––––––––––––––*/
-
 body {
-  margin: 0;
+  max-width: 60rem;
+  margin: auto;
   font-size: 1.6rem;
   line-height: 1.6;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  font-weight: 400;
-  color: $primary;
-  background-color: $background;
+  font-weight: normal;
+  color: #000;
+  background-color: #fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -30,31 +28,21 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bolder;
 }
 
-@media (min-width: 414px) {
-  h1 { font-size: 4.236rem; }
-  h2 { font-size: 2.618rem; }
-  h3 { font-size: 1.618rem; }
-  h4 { font-size: 1.000rem; }
-  h5 { font-size: 0.618rem; }
-  h6 { font-size: 0.382rem; }
-}
-
-@media (min-width: 768px) {
-  h1 { font-size: 6.854rem; }
-  h2 { font-size: 4.236rem; }
-  h3 { font-size: 2.618rem; }
-  h4 { font-size: 1.618rem; }
-  h5 { font-size: 1.000rem; }
-  h6 { font-size: 0.618rem; }
-}
+h1 { font-size: 2.2em; }
+h2 { font-size: 1.8em; }
+h3 { font-size: 1.6em; }
+h4 { font-size: 1.4em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1em; }
 
 a, a:visited {
-  color: $primary;
+  color: $ternary;
   text-decoration: none;
-  font-weight: bolder;
   transition: color .15s ease-in;
 
-  // &:hover { color: lighten($ternary, 9); }
+  &:hover {
+    color: lighten($ternary, 9);
+  }
 }
 
 abbr[title] {
@@ -63,7 +51,7 @@ abbr[title] {
   cursor: help;
 }
 
-mark, .highlight {
+mark {
   background-color: adjust_hue(saturate(lighten($primary, 50), 91), 55);
   border-radius: .1rem;
   padding: .1rem;
@@ -158,52 +146,3 @@ textarea, input[type=text], input[type=search], input[type=email], input[type=ur
 }
 
 img { max-width: 100%; }
-
-/* Components
- –––––––––––––––––––––––*/
-
-div.container {
-  max-width: 914px;
-  margin: 0 auto;
-}
-
-@media (min-width: 414px) {
-  div.container { width: 90%; }
-}
-
-@media (min-width: 768px) {
-  div.container { width: 80%; }
-}
-
-nav {
-  padding: 1.4rem;
-  color: $primary;
-  font-size: 1.2rem;
-
-  &:after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-  > a:first-child {
-    float: left;
-    margin-left: 0;
-  }
-
-  > a {
-    float: right;
-    margin-left: 1rem;
-    color: $primary;
-  }
-}
-
-div.hero {
-  min-height: calc(100vh - 36rem);
-  padding: 128px 0;
-
-  > h1:first-child {
-    margin: 0;
-    margin-bottom: 8rem;
-  }
-}

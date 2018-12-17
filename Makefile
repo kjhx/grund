@@ -1,20 +1,20 @@
 NPM := npm
 SASS := sass
 
-.PHONY: all clean b build s serve publish
+.PHONY: all build clean
 
-all : serve
+all : build
 
 clean:
 	rm -rf .sass-cache
 
 b: build
 build:
-	$(SASS) --sourcemap=none --style compressed scss/pressman.scss pressman.css
+	$(SASS) --sourcemap=none --style compressed scss/grund.scss grund.css
 
 s: serve
 serve:
-	$(SASS) --watch scss/pressman.scss:pressman.css
+	$(SASS) --watch scss/grund.scss:grund.css
 
-publish: scss/pressman.scss
+publish: scss/grund.scss
 	$(NPM) publish
