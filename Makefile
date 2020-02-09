@@ -10,11 +10,11 @@ clean:
 
 b: build
 build:
-	$(SASS) --sourcemap=none --style compressed scss/grund.scss grund.css
+	$(SASS) --no-source-map --style compressed scss/grund.scss grund.css
 
 s: serve
 serve:
-	$(SASS) --watch scss/grund.scss:grund.css
+	$(SASS) --no-source-map --watch scss/grund.scss:grund.css
 
 publish: scss/grund.scss
 	$(NPM) publish
