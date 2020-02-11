@@ -3,3 +3,5 @@
 *.sass.map
 *.scss.map
 test.html
+
+.DS_Store
